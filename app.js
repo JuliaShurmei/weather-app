@@ -11,12 +11,3 @@ let weather__minmax = document.querySelector(".weather__minmax")
 let weather__realfeel = document.querySelector('.weather__realfeel');
 let weather__humidity = document.querySelector('.weather__humidity');
 let weather__wind = document.querySelector('.weather__wind');
-let weather__pressure = document.querySelector('.weather__pressure');
-
-
- 
-
-
-
-
-document.body.addEventListener('load', getWeather())
