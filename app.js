@@ -16,12 +16,6 @@ let weather__pressure = document.querySelector('.weather__pressure');
 
  
 
-// convert country code to name
-function convertCountryCode(country){
-    let regionNames = new Intl.DisplayNames(["en"], {type: "region"});
-    return regionNames.of(country)
-}
-
 function getWeather(){
     const API_KEY = '64f60853740a1ee3ba20d0fb595c97d5'
 
