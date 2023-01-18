@@ -13,37 +13,6 @@ let weather__humidity = document.querySelector('.weather__humidity');
 let weather__wind = document.querySelector('.weather__wind');
 let weather__pressure = document.querySelector('.weather__pressure');
 
-// search
-document.querySelector(".weather__search").addEventListener('submit', e => {
-    let search = document.querySelector(".weather__searchform");
-    // prevent default action
-    e.preventDefault();
-    // change current city
-    currCity = search.value;
-    // get weather forecast 
-    getWeather();
-    // clear form
-    search.value = ""
-})
-
-// units
-document.querySelector(".weather_unit_celsius").addEventListener('click', () => {
-    if(units !== "metric"){
-        // change to metric
-        units = "metric"
-        // get weather forecast 
-        getWeather()
-    }
-})
-
-document.querySelector(".weather_unit_farenheit").addEventListener('click', () => {
-    if(units !== "imperial"){
-        // change to imperial
-        units = "imperial"
-        // get weather forecast 
-        getWeather()
-    }
-})
 
 function convertTimeStamp(timestamp, timezone){
      const convertTimezone = timezone / 3600; // convert seconds to hours 
